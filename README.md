@@ -48,20 +48,20 @@ Website ini membantu guru atau petugas pembinaan untuk:
 
 🗂 Struktur Folder
 
---- project/
---- │
---- ├─ server.js
---- ├─ package.json
---- │
---- ├─ data/
---- │   └─ kelas.json
---- │
---- ├─ public/
---- │   ├─ index.html
---- │   ├─ absen.html
---- │   └─ style.css
---- │
---- └─ templates/
----    └─ template-absen.docx
+---project/
+---│
+---├─ server.js
+---├─ package.json
+---│
+---├─ data/
+---│   └─ kelas.json
+---│
+---├─ public/
+---│   ├─ index.html
+---│   ├─ absen.html
+---│   └─ style.css
+---│
+---└─ templates/
+---   └─ template-absen.docx
 
 
