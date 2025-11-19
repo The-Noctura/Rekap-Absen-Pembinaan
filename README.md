@@ -46,7 +46,7 @@ Website ini membantu guru atau petugas pembinaan untuk:
 - -Jumlah total
 - Daftar siswa (no + nama)
 
-🗂 Struktur Folder
+### 🗂 Struktur Folder
 
 project/
 │
@@ -63,5 +63,38 @@ project/
 │
 └─ templates/
    └─ template-absen.docx
+
+### 📝 Cara Kerja Export Word
+
+- 1. Frontend mengirim data absensi:
+  - kelas
+  - jumlah hadir
+  - daftar tidak hadir
+
+- 2. Backend menyocokkan nomor absen → nama siswa
+
+- 3. Backend memasukkan data ke template Word pada sel tabel:
+  - No urut kelas
+  - Nama kelas
+  - Jumlah laki / perempuan / total
+  - Jumlah hadir
+  - Daftar nama tidak hadir
+
+- 4. Docxtemplater menghasilkan file .docx yang siap diunduh.
+
+###📦 Dependencies
+- Express — server backend
+- Docxtemplater — mengisi template Word
+- PizZip — membaca file .docx
+- Multer (opsional untuk upload)
+
+Install manual:
+npm install express docxtemplater pizzip
+
+### ⚠ Catatan
+- Template Word harus menggunakan placeholder Docxtemplater
+- Data siswa harus akurat agar mapping nomor → nama tepat
+- Sistem ini tidak melakukan login atau database, seluruh data statis dalam JSON (tergantung kedepannya)
+
 
 
