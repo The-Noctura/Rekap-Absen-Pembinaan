@@ -1,0 +1,22 @@
+{
+  "name": "rekap-absen-pembinaan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Noctura/Rekap-Absen-Pembinaan.git"
+  },
+  "author": "The Noctura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Noctura/Rekap-Absen-Pembinaan/issues"
+  },
+  "homepage": "https://github.com/The-Noctura/Rekap-Absen-Pembinaan#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
